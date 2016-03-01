@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+<meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="screen.css">
+	<title>Home</title>
+
+
+</head>
+
+<body>
+
+<nav>
+	<li><a href="#Home">Home</a></li>
+	<li><a href="#about">about</a></li>
+	<li><a href="#video">video</a></li>
+	<li><a href="#form">sign up</a></li>
+</nav>
+
+<div class="container">
+
+<div class="sec" id="section1">
+<a id="Home"></a>
+<div class="welcome"><p><h1>WELCOME</h1></p></div>
+
+</div>
+
+<div class="sec"id="section2">
+<div class="memeber_container">
+<a id="about"></a>
+<div class="member">1</div>
+<div class="member">2</div>
+<div class="member">3</div>
+<div class="member">4</div>
+</div>
+<object width="400" height="250"
+data="http://www.youtube.com/embed/zziFIa0X5jI">
+</object>
+</div>
+
+
+<div class="sec" id="section3">
+  <a id="video"></a>
+</div>
+
+<div class="sec" id="section4">
+<a id="form"></a>
+  <div class="form_container">
+
+  	<form name="rsvp_form"  onsubmit="return validateForm()" >
+              <div id="signuptext"><h2>Sign up for our video updates:</h2></div>
+               
+               <h4>Email</h4>
+               <input id="email" type="email" placeholder="you@example.com" required>
+
+               <textarea class="message" placeholder="Any spots in Chicago you are interested? etc." rows="8"></textarea>
+               <span id="thanks"></span>
+               <input class="btn" id="btn" type="submit" value="Send me updates">
+            </div>
+      </div>
+      </form>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+<!--<div class="parent">
+
+	<div class="item">1</div>
+
+
+
+	<div class="item">Lipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+
+	<div class="item">
+		<object 
+data="https://www.youtube.com/v/zziFIa0X5jI">
+</object>
+	</div>
+
+
+	<div class="item">4</div>
+
+	
+	<div class="item">5</div> 
+	
+
+	<div class="item">6</div>
+	
+
+
+	<div class="item">7</div>
+	
+
+
+	<div class="item">8</div>
+	
+
+
+</div>
+</section>
+-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script>$(document).ready(function() {
+  function filterPath(string) {
+    return string
+      .replace(/^\//,'')  
+      .replace(/(index|default).[a-zA-Z]{3,4}$/,'')  
+      .replace(/\/$/,'');
+  }
+  $('a[href*=#]').each(function() {
+    if ( filterPath(location.pathname) == filterPath(this.pathname)
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+         $(this).click(function() {
+           $('html, body').animate({scrollTop: targetOffset}, 2000);
+           return false;
+         });
+      }
+    }
+  });
+});</script>
+</body>
+</html>
