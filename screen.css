@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200);
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -47,181 +48,216 @@ table {
 	border-spacing: 0;
 }
 
-html{
-	font-family: 'Nobile',Helvetica,arial, sans-serif;
+html {
+    font-family: 'Nobile', Helvetica, arial, sans-serif;
 }
-
-li{
-	list-style: none;
-	
-	}
-
-a:link{
-	text-decoration: none;
+li {
+    list-style: none;
 }
-
-a{
-color: white;
-padding-right: 50px;}
-
-a:hover{
-	color: lightgray;
-	padding-top: 100%;
-	border-top: solid white 4px;}
-
-nav{
-	background: #252726;
-	position: fixed;
-	width: 100%;
-	padding: 2%;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
+a:link {
+    text-decoration: none;
 }
-
-
-.container{
-	height: 400%;
-	display: block;
-	flex-direction: column;
+a {
+    color: white;
 }
-
-.sec{
-	width: 100%;
-	height: 700px;
+a:hover {
+    color: lightgray;
+    border-top: solid skyblue 5px;
 }
-
-#section1{
-	background-color: #384F75;
-	background:url(images/1.jpeg) no-repeat center center;
-	background-size: cover;
-}
-.welcome{
-	width: 40%;
-    margin: 0 auto; 
-    padding: 30px;
-    font-size: 200%;
+li a {
+    display: inline-block;
+    color: white;
     text-align: center;
-	color: white;
-	border: solid white 4px;
-	margin-top:40%;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-
-
-#section2{
-	background-color:#59718D;
-	background:url(images/3.jpg) no-repeat center center;
-	background-size: cover;
-
+li {
+    float: left;
 }
-
-.memeber_container{
-	display: flex;
-	flex-wrap: wrap;
-	align-content: space-around;
-	border: solid lightcoral 2px;
-	flex-direction: column;
-	width: 400px;
-	height: 300px;
+ul {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
-
-.member{
-	border: solid white;
-	height: 100px;
-	width: 100px;
-	margin-bottom: 40px;
-
+.nav {
+    text-transform: capitalize;
+    background: #252726;
+    position: fixed;
+    font-family: 'Racing Sans One', cursive;
 }
-
-
-
-#section3{
-	background-color:#9FA5A6;
-	background:url(images/2.jpeg) no-repeat center center;
-	background-size: cover;
+.sec {
+    height: 700px;
 }
-
-#section4{
-	background-color:#BCB69C;
-	background:url(images/6.jpg) no-repeat center center;
-	background-size: cover;
+#section1 {
+    height: 300px;
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/chicago.jpg) no-repeat center center;
+    background-size: cover;
 }
-
-#signuptext{
-	border: 5px solid white;
-	background: white;
-	width: 300px;
+.sec1-content {
+    position: absolute;
+    color: white;
+    text-align: center;
 }
-
-.form_container{
-	margin-left: 20px;
+h2 {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 200%;
+    white-space: nowrap;
 }
-
-
-@media (min-width: 420px ){
-
-.sec{
-	width: auto;
-	height: 1200px;
+.logo {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    width: 50%;
 }
-
-
+.sentence-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -60%;
 }
-
-#logo{
-	padding-top: 20%;
+.sec1content {
+    padding-left: 1%;
+    padding-right: 2%;
+    color: white;
+    font-family: 'Racing Sans One', cursive;
+    margin-left: 5%;
+    background: black;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.)) padding: 1%;
 }
-
-
-
-
-
-
-
-
-
-
-html{
-	font-family: 'Nobile',Helvetica,arial, sans-serif;
+#sentence-4 {
+    margin-right: 5%;
+    margin-top: 30%;
+    align-self: flex-end;
+    width: 50%;
 }
-
-input{
-	font-family: sans-serif;
+#section2 {
+    background-color: #7053FC;
+    /*background:url(images/6.jpg) no-repeat center center;
+	background-size: cover;*/
+    
+    font-family: 'Droid Sans', sans-serif;
 }
-
-input{
-	width: 90%;
-	height: 200%;
-	border-radius:3px;
-	border: none;
-	border:solid black 1.5px;
-	font-size: 120%;
-	padding:2%;
+.about-content {
+    line-height: 130%;
+    padding: 0 5% 0 5%;
+    text-align: center;
 }
-
-textarea{
-	width: 90%;
-	font-size: 100%;
+figcaption {
+    text-align: center;
+    color: white;
 }
-
+.memeber_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.5);
+    -webkit-border-bottom-right-radius: 24px;
+    -webkit-border-bottom-left-radius: 24px;
+    -moz-border-radius-bottomright: 24px;
+    -moz-border-radius-bottomleft: 24px;
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
+.member {
+    margin-top: 25%;
+    height: 100px;
+}
+#section3 {
+    background-color: #EDD859;
+    /*background:url(images/2.jpeg) no-repeat center center;*/
+    
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sec h1 {
+    padding: 10% 0 10% 0;
+    text-transform: uppercase;
+    font-size: 400%;
+    font-family: 'Racing Sans One', cursive;
+    text-align: center;
+}
+object {
+    width: 100%;
+    height: 30%;
+}
+.video-describe {
+    height: 200px;
+}
+#signuptext {
+    color: white;
+    font-family: 'Racing Sans One', cursive;
+    background: black;
+    padding: 10px;
+}
+.form_container {
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 100%;
+    height: auto;
+    background-color: #384F75;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8))
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h4 {
+    color: white;
+}
+input {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#email {
+    border-radius: 1px;
+    outline: none;
+    width: 60%;
+    padding: 3%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    font-size: 100%;
+}
+textarea {
+    width: 100%;
+    font-size: 100%;
+}
 input[type=submit].btn {
-	background-color: #3399ff;
-	border:none;
-	border-radius: 4px;
-	color: white;
-	font-size:110%;
-	padding: 1%;
-	margin-top: 4%;
-	display: block;
-	width: 95%;
-	height: auto;
-	-webkit-appearance: none;
+    background-color: #3399ff;
+    border: none;
+    color: white;
+    font-size: 100%;
+    padding: 1%;
+    width: 50%;
+    height: 40px;
+    margin-bottom: 20px;
+    -webkit-appearance: none;
+    text-transform: uppercase;
+    border-radius: 0;
 }
-
-span{
-	display: block;
-	color: #e74c3c;
-	font-size:80%;
+@media (min-width: 420px) {
+    .sec {
+        width: auto;
+        height: 1200px;
+    }
+    .sentence-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: -60%;
+    }
 }
-
-	
+}
