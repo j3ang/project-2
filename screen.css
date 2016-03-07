@@ -29,37 +29,26 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+body { line-height: 1 }
+ol,
+ul { list-style: none }
+blockquote,
+q { quotes: none }
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
-
-html {
-    font-family: 'Nobile', Helvetica, arial, sans-serif;
-}
-li {
-    list-style: none;
-}
-a:link {
-    text-decoration: none;
-}
-a {
-    color: white;
-}
+html { font-family: 'Nobile', Helvetica, arial, sans-serif }
+li { list-style: none }
+a:link { text-decoration: none }
+a { color: white }
 a:hover {
     color: lightgray;
     border-top: solid skyblue 5px;
@@ -70,9 +59,6 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
-li {
-    float: left;
 }
 ul {
     display: inline-flex;
@@ -91,16 +77,7 @@ ul {
     position: fixed;
     font-family: 'Racing Sans One', cursive;
 }
-.sec {
-    height: 700px;
-}
-
-
-
-
-
-
-
+.sec { height: 700px }
 #section1 {
     height: 300px;
     background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/chicago.jpg) no-repeat center center;
@@ -127,36 +104,29 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: -60%;
+    margin-top: -45%;
 }
 .sec1content {
+    margin-bottom: 1%;
     padding-left: 1%;
     padding-right: 2%;
+    padding: 1%;
     color: white;
     font-family: 'Racing Sans One', cursive;
     margin-left: 5%;
-    background: black;
-    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.)) padding: 1%;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 #sentence-4 {
     margin-right: 5%;
-    margin-top: 30%;
+    margin-top: 10%;
     align-self: flex-end;
     width: 50%;
 }
-
-
-
-
-
-
-
-
 #section2 {
-    background-color: #7053FC;
-    /*background:url(images/6.jpg) no-repeat center center;
-	background-size: cover;*/
-    
+    background-color: #F3F0D0;
+    /*background: url(images/6.jpg) no-repeat center center;;
+    background-size: cover;*/
+    height: 850px;
     font-family: 'Droid Sans', sans-serif;
 }
 .about-content {
@@ -168,16 +138,30 @@ figcaption {
     text-align: center;
     color: white;
 }
+.intro-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#about-content { margin-top: -20% }
+.about-text {
+    margin-top: -5%;
+    text-align: center;
+    align-self: center;
+    width: 80%;
+    line-height: 200%;
+}
 .memeber_container {
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
     height: 300px;
-    background-color: rgba(0, 0, 0, 0.5);
-    background: rgba(0, 0, 0, 0.5);
-    color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
     -webkit-border-bottom-right-radius: 24px;
     -webkit-border-bottom-left-radius: 24px;
     -moz-border-radius-bottomright: 24px;
@@ -186,22 +170,12 @@ figcaption {
     border-bottom-left-radius: 24px;
 }
 .member {
-    margin-top: 25%;
-    height: 100px;
+    width: 100px;
+    padding-top: 20%;
 }
-
-
-
-
-
-
-
-
-
 #section3 {
-    background-color: #EDD859;
-    /*background:url(images/2.jpeg) no-repeat center center;*/
-    
+    font-family: 'Droid Sans', sans-serif;
+    background-color: #F1F7E6;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -216,12 +190,14 @@ figcaption {
 }
 object {
     width: 100%;
-    height: 30%;
+    height: 40%;
 }
 .video-describe {
-    height: 200px;
+    text-align: center;
+    height: 50px;
 }
 #signuptext {
+    text-align: center;
     color: white;
     font-family: 'Racing Sans One', cursive;
     background: black;
@@ -232,65 +208,152 @@ object {
     width: 100%;
     height: auto;
     background-color: #384F75;
-    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8))
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
+h4 { color: white }
+input { font-family: 'Source Sans Pro', sans-serif }
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 form {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-h4 {
-    color: white;
-}
-input {
-    font-family: 'Source Sans Pro', sans-serif;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5%;
 }
 #email {
-    border-radius: 1px;
-    outline: none;
-    width: 60%;
-    padding: 3%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: none;
-    font-size: 100%;
-}
-textarea {
-    width: 100%;
-    font-size: 100%;
-}
-input[type=submit].btn {
-    background-color: #3399ff;
-    border: none;
-    color: white;
-    font-size: 100%;
-    padding: 1%;
-    width: 50%;
-    height: 40px;
-    margin-bottom: 20px;
-    -webkit-appearance: none;
-    text-transform: uppercase;
+    background-color: #fafafa;
+    padding: 7px;
+    vertical-align: top;
+    display: inline-block;
+    font-size: 90%;
+    font-weight: 400;
+    border: 0;
+    width: 250px;
+    height: 32px;
+    margin: 0;
     border-radius: 0;
+    -webkit-appearance: none;
 }
-
-
-
-
-
-
-
-
-
-@media (min-width: 420px) {
+input[type="submit"]:hover {
+    background-color: #3399ff;
+    color: #fafafa;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+input[type="submit"].btn {
+    font-family: 'Racing Sans One', cursive;
+    font-size: 100%;
+    color: #fafafa;
+    width: 140px;
+    border: 1px solid black;
+    border-width: 0px 0px 0px 1px;
+    margin: 0;
+    height: 32px;
+    background-color: #3399ff;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+#section3 h1 { margin-top: -10% }
+@media (max-width: 410px) { 
+    .sentence-container {
+        margin-top: -55%;
+        font-size: 70%;
+    }
+    .sec1content {
+        padding: 1%;
+        color: white;
+        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    }
+    #sentence-4 { width: 40% }
+    .intro-wrapper { height: 500px }
+    #about-content { font-size: 35% }
+    .about-text { font-size: 70% }
+}
+@media (min-width: 520px) and (max-width: 750px) { 
     .sec {
         width: auto;
         height: 1200px;
     }
-    .sentence-container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        margin-top: -60%;
+    #section1 { height: 500px }
+    .intro-wrapper { height: 600px }
+    #section2 { height: 900px }
+    .member { width: 120px }
+    .logo { height: 80% }
+    object {
+        width: 95%;
+        margin: 0 auto;
     }
 }
+@media (min-width: 750px) and (max-width: 1200px) { 
+    .sec {
+        width: auto;
+        height: 1200px;
+    }
+    #section1 { height: 900px }
+    .member { width: 180px }
+    .logo {
+        height: 80%;
+        width: 60%;
+    }
+    .sentence-container {
+        margin-top: -35%;
+        font-size: 120%;
+    }
+    .sec1content {
+        margin-bottom: 1%;
+        padding: 1%;
+        color: white;
+        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    }
+    #sentence-4 { width: 40% }
+    .intro-wrapper { height: 900px }
+    #about-content { margin-top: -10% }
+    .about-text {
+        text-align: center;
+        align-self: center;
+        width: 50%;
+        line-height: 250%;
+    }
+    #section2 { height: 1200px }
+    object {
+        width: 90%;
+        height: 50%;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 1200px) { 
+    .sec {
+        width: auto;
+        height: 1200px;
+    }
+    #section1 { height: 900px }
+    .member { width: 180px }
+    .logo {
+        height: 100%;
+        width: 50%;
+    }
+    .sentence-container {
+        margin-top: -28%;
+        font-size: 120%;
+    }
+    #sentence-4 { width: 30% }
+    .intro-wrapper { height: 900px }
+    #about-content { margin-top: -10% }
+    .about-text {
+        text-align: center;
+        align-self: center;
+        width: 50%;
+        line-height: 250%;
+    }
+    #section2 { height: 1200px }
+    object {
+        width: 70%;
+        height: 60%;
+        margin: 0 auto;
+    }
 }

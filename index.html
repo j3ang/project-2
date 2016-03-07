@@ -15,7 +15,7 @@
             <li><a href="#Home">home</a></li>
             <li><a href="#about">about</a></li>
             <li><a href="#video">video</a></li>
-            <li><a href="#form">sign up</a></li>
+            <li><a href="#form">signUp</a></li>
          </ul>
       </div>
       <div class="sec" id="section1">
@@ -38,7 +38,6 @@
       </div>
       <div class="sec"id="section2">
          <div class="memeber_container">
-            <a id="about"></a>
             <figure>
                <img class="member" id="member1" src="images/ola.png">
                <figcaption>Ola</figcaption>
@@ -55,14 +54,23 @@
                <img class="member" id="member1" src="images/alex.png">
                <figcaption>Alex</figcaption>
             </figure>
+            <a id="about"></a>
          </div>
-         <img src="images/bracket.svg">
-         <div class="about-content">Chicago is a bustling city full of innovation, arts, culture, diversity and entertainment.  Every day, you can find something new here.  Whether it’s the Van Gof art exhibit at the Art Institute, the new free zipline, or the up and coming asian fusion restaurant in the loop, it’s always worth wandering out and discovering what the Second City has to offer. Join us for the next couple episodes </div>
-         <img src="images/bracket-down.svg">
+         <div class="intro-wrapper">
+            <img class="bracket" src="images/bracket.svg">
+            <div id="about-content">
+               <h1> About</h1>
+            </div>
+            <div class="about-text">Chicago is a bustling city full of innovation, arts, culture, diversity and entertainment.  Every day, you can find something new here.  Whether it’s the Van Gof art exhibit at the Art Institute, the new free zipline, or the up and coming asian fusion restaurant in the loop, it’s always worth wandering out and discovering what the Second City has to offer. Join us for the next couple episodes </div>
+            <img class="bracket"  src="images/bracket-down.svg">
+         </div>
       </div>
       <div class="sec" id="section3">
          <a id="video"></a>
          <h1>intro</h1>
+         <div class="video-describe">
+            <p>Our first location is downtown area. We will take you to loop and Magnifcent Mile.</p>
+         </div>
          <object 
             data="http://www.youtube.com/embed/SG0ZAyUcVD0">
          </object>
@@ -74,56 +82,13 @@
             <form name="rsvp_form"  onsubmit="return validateForm()" >
                <input id="email" type="email" placeholder="Email Address" required>
                <span id="thanks"></span>
-               <input class="btn" id="btn" type="submit" value="Send me updates">
+               <input class="btn" id="btn" type="submit" value="Sign Up">
          </div>
       </div>
       </form>
       </div>
       </div>
       </div>
-      <!--<div class="sec" id="section4">
-         <div class="parent">
-         
-          <div class="item">1</div>
-         
-         
-         
-          <div class="item">Lipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-         
-         
-          <div class="item">
-            <object 
-         data="https://www.youtube.com/v/zziFIa0X5jI">
-         </object>
-          </div>
-         
-         
-          <div class="item">4</div>
-         
-          
-          <div class="item">5</div> 
-          
-         
-          <div class="item">6</div>
-          
-         
-         
-          <div class="item">7</div>
-          
-         
-         
-          <div class="item">8</div>
-          
-         
-         
-         </div>
-         </section>
-         -->
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
       <script>$(document).ready(function() {
          function filterPath(string) {
