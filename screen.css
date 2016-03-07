@@ -341,7 +341,9 @@ input[type="submit"].btn {
         margin-top: -28%;
         font-size: 120%;
     }
-    #sentence-4 { width: 30% }
+    #sentence-4 { 
+        margin-top: 6%;
+        width: 30% }
     .intro-wrapper { height: 900px }
     #about-content { margin-top: -10% }
     .about-text {
