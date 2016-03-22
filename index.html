@@ -2,7 +2,7 @@
 <html lang = "en-US">
    <head>
       <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,shrink-to-fit=no">
       <link rel="stylesheet" type="text/css" href="screen.css">
       <link href='https://fonts.googleapis.com/css?family=Racing+Sans+One' rel='stylesheet' type='text/css'>
       <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600italic' rel='stylesheet' type='text/css'>
@@ -72,10 +72,12 @@
             <p>Our first location is downtown area. We will take you to loop and Magnifcent Mile.</p>
          </div>
          <object 
-            data="http://www.youtube.com/embed/SG0ZAyUcVD0">
+            data="http://www.youtube.com/embed/SG0ZAyUcVD0" allowfullscreen>
          </object>
+
+
    
-<audio autoplay="autoplay" controls="controls">  
+<audio  controls="controls">  
    <source src="audio/(dogmazic)Citylife_Meme_vs_Xan.lite.mp3" />  
 </audio> 
          <a id="form"></a>
@@ -120,5 +122,16 @@
          });
          });
       </script>
+  <script type="text/javascript">
+    window.addEventListener("play", function(evt)
+{
+    if(window.$_currentlyPlaying)
+    {
+        window.$_currentlyPlaying.pause();
+    } 
+    window.$_currentlyPlaying = evt.target;
+}, true);
+  </script>
+      
    </body>
 </html>
