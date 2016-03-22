@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html lang = "en-US">
+<html lang="en-US">
    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,shrink-to-fit=no">
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
       <link rel="stylesheet" type="text/css" href="screen.css">
       <link href='https://fonts.googleapis.com/css?family=Racing+Sans+One' rel='stylesheet' type='text/css'>
-      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600italic' rel='stylesheet' type='text/css'>
-      <link href='https://fonts.googleapis.com/css?family=Droid+Sans:700' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
       <title>Home</title>
    </head>
    <body>
       <div class="nav">
          <ul>
-            <li><a href="#Home">home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#video">video</a></li>
-            <li><a href="#form">signUp</a></li>
+            <li><a href="#Home">home</a>
+            </li>
+            <li><a href="#about">about</a>
+            </li>
+            <li><a href="#video">video</a>
+            </li>
+            <li><a href="#form">signUp</a>
+            </li>
          </ul>
       </div>
       <div class="sec" id="section1">
          <a id="Home"></a>
-         <img src="images/logo.svg" class="logo">
+         <img src="images/logo.svg" class="logo" alt="logo">
          <div class="sentence-container">
             <div class="sec1content" id="sentence-1">
                <p>New to Chicago?</p>
@@ -36,102 +39,180 @@
             </div>
          </div>
       </div>
-      <div class="sec"id="section2">
-         <div class="memeber_container">
-            <figure>
-               <img class="member" id="member1" src="images/ola.png">
-               <figcaption>Ola</figcaption>
-            </figure>
-            <figure>
-               <img class="member" id="member1" src="images/kat.png">
-               <figcaption>katherine</figcaption>
-            </figure>
-            <figure>
-               <img class="member" id="member1" src="images/john.png">
-               <figcaption>John</figcaption>
-            </figure>
-            <figure>
-               <img class="member" id="member1" src="images/alex.png">
-               <figcaption>Alex</figcaption>
-            </figure>
-            <a id="about"></a>
-         </div>
-         <div class="intro-wrapper">
-            <img class="bracket" src="images/bracket.svg">
-            <div id="about-content">
-               <h1> About</h1>
+      <div class="border">
+         <div class="where">
+            <div class="question_mark">
+               <img id="question" src="images/question.svg" alt="questionlogo">
             </div>
-            <div class="about-text">Chicago is a bustling city full of innovation, arts, culture, diversity and entertainment.  Every day, you can find something new here.  Whether it’s the Van Gof art exhibit at the Art Institute, the new free zipline, or the up and coming asian fusion restaurant in the loop, it’s always worth wandering out and discovering what the Second City has to offer. Join us for the next couple episodes </div>
-            <img class="bracket"  src="images/bracket-down.svg">
+            <div id="text">
+               <h2>Where to go </h2>
+               As a new student to IIT, you may struggle to find fun places in the city to explore. Do you find yourself staying at home every weekends because you don't know where to go?
+            </div>
          </div>
       </div>
-      <div class="sec" id="section3">
-         <a id="video"></a>
-         <h1>intro</h1>
-         <div class="video-describe">
-            <p>Our first location is downtown area. We will take you to loop and Magnifcent Mile.</p>
+      <div class="border">
+         <div class="sec" id="city">
+            <div class="location_mark"> <img id="location" src="images/location.svg" alt="locationlogo">
+            </div>
+            <div class="city_wrapper">
+               <div class="subsec" id="downtown">
+                  <h2 class="tittle">
+                     Downtown 
+                  </h2>
+                  <ul>
+                     <li>loop</li>
+                     <li>south loop</li>
+                     <li>river north</li>
+                     <li>streeterville</li>
+                     <li>magnificent mile</li>
+                     <li>gold coast</li>
+                     <li>chinatown</li>
+                  </ul>
+               </div>
+               <div class="subsec" id="North">
+                  <h2 class="tittle">north</h2>
+                  <ul>
+                     <li>old town</li>
+                     <li>lincoln park</li>
+                     <li>goose island</li>
+                     <li>wicker park/bucktown</li>
+                     <li>logan sqaure</li>
+                     <li>lakeview</li>
+                     <li>uptown</li>
+                  </ul>
+               </div>
+               <div class="subsec" id="west">
+                  <h2 class="tittle">west</h2>
+                  <ul>
+                     <li>west loop/town</li>
+                     <li>little italy</li>
+                     <li>pilsen</li>
+                     <li>humboldt park</li>
+                     <li>north lawndale</li>
+                     <li>united center</li>
+                     <li>austin</li>
+                  </ul>
+               </div>
+               <div class="subsec" id="south">
+                  <h2 class="tittle">south</h2>
+                  <ul>
+                     <li>bronzeville</li>
+                     <li>bridgeport</li>
+                     <li>hyde park</li>
+                     <li>mcKinley park</li>
+                     <li>kenwood</li>
+                     <li>back of the yards</li>
+                     <li>washinton park</li>
+                  </ul>
+               </div>
+            </div>
          </div>
-         <object 
-            data="http://www.youtube.com/embed/SG0ZAyUcVD0" allowfullscreen>
+      </div>
+      <div class="border">
+         <div  id="picture">
+            <div id="favorate_flex">
+               <div class="favorate_wrapper" >
+                  <img id="favorate" src="images/favorate.svg" alt="favorate_logo">          
+               </div>
+               <div class="follow_wrapper" id="favorate_flex_item">
+                  <h2>Your Ultimate Guide</h2>
+                  Come with us, we find fun things to do and cool places to go in the city every week.
+               </div>
+            </div>
+            <div class="photo">
+               <img src="images/IMG_3092.JPG" alt="group">
+               <img src="images/IMG_3090.jpg" alt="iceskating">
+               <img src="images/IMG_3089.JPG" alt="chinatown">
+               <img src="images/IMG_3086.JPG" alt="narypier">
+               <img src="images/IMG_3091.jpg" alt="mile">
+               <img src="images/IMG_3093.JPG" alt="mile2">
+            </div>
+         </div>
+      </div>
+      <div class="border">
+         <div class="sec" id="section3">
+            <div class="memeber_container">
+               <figure>
+                  <img class="member" id="member1" src="images/ola.png" alt="ola">
+                  <figcaption>Ola</figcaption>
+               </figure>
+               <figure>
+                  <img class="member" id="member2" src="images/kat.png" alt="kat">
+                  <figcaption>katherine</figcaption>
+               </figure>
+               <figure>
+                  <img class="member" id="member3" src="images/john.png" alt="john">
+                  <figcaption>John</figcaption>
+               </figure>
+               <figure>
+                  <img class="member" id="member4" src="images/alex.png" alt="alex">
+                  <figcaption>Alex</figcaption>
+               </figure>
+            </div>
+         </div>
+      </div>
+      <div class="border">
+         <div id="sec_quoute">
+            <div class="quote_wrapper" >
+               <a id="about"></a>
+               <img id="quote" src="images/quote.svg" alt="quote">
+            </div>
+            <div class="about-text" >
+               Chicago is a bustling city full of innovation, arts, culture, diversity and entertainment. Every day, you can find something new here. Whether it’s the Van Gof art exhibit at the Art Institute, the new free zipline, or the up and coming asian fusion restaurant in the loop, it’s always worth wandering out and discovering what the Second City has to offer. Join us for the next couple episodes 
+            </div>
+         </div>
+      </div>
+      <div id="section4">
+         <div class="video_flex">
+            <div class="video_logo_wrapper">
+               <img id="video_logo" src="images/video.svg" alt="videologo">
+            </div>
+            <div class="video_description">
+               <h2>Introduction</h2>
+               Downtown area:loop and Magnifcent Mile.
+            </div>
+         </div>
+         <object data="http://www.youtube.com/embed/SG0ZAyUcVD0">
          </object>
-
-
-   
-<audio  controls="controls">  
-   <source src="audio/(dogmazic)Citylife_Meme_vs_Xan.lite.mp3" />  
-</audio> 
+         <a id="video"></a>
          <a id="form"></a>
          <div class="form_container">
             <div id="signuptext">
                <h3>Sign up for our video updates:</h3>
             </div>
-            <form name="rsvp_form"  onsubmit="return validateForm()" >
+            <form name="rsvp_form" onsubmit="return validateForm()">
                <input id="email" type="email" placeholder="Email Address" required>
                <span id="thanks"></span>
                <input class="btn" id="btn" type="submit" value="Sign Up">
-
+            </form>
          </div>
       </div>
-      </form>
-      </div>
-      </div>
-      </div>
-
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-      <script>$(document).ready(function() {
-         function filterPath(string) {
-           return string
-             .replace(/^\//,'')  
-             .replace(/(index|default).[a-zA-Z]{3,4}$/,'')  
-             .replace(/\/$/,'');
-         }
-         $('a[href*=#]').each(function() {
-           if ( filterPath(location.pathname) == filterPath(this.pathname)
-           && location.hostname == this.hostname
-           && this.hash.replace(/#/,'') ) {
-             var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
-             var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-              if ($target) {
-                var targetOffset = $target.offset().top;
-                $(this).click(function() {
-                  $('html, body').animate({scrollTop: targetOffset}, 2000);
-                  return false;
-                });
+      <script>
+         $(document).ready(function() {
+             function filterPath(string) {
+                 return string
+                     .replace(/^\//, '')
+                     .replace(/(index|default).[a-zA-Z]{3,4}$/, '')
+                     .replace(/\/$/, '');
              }
-           }
-         });
+             $('a[href*=#]').each(function() {
+                 if (filterPath(location.pathname) == filterPath(this.pathname) && location.hostname == this.hostname && this.hash.replace(/#/, '')) {
+                     var $targetId = $(this.hash),
+                         $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
+                     var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+                     if ($target) {
+                         var targetOffset = $target.offset().top;
+                         $(this).click(function() {
+                             $('html, body').animate({
+                                 scrollTop: targetOffset
+                             }, 2000);
+                             return false;
+                         });
+                     }
+                 }
+             });
          });
       </script>
-  <script type="text/javascript">
-    window.addEventListener("play", function(evt)
-{
-    if(window.$_currentlyPlaying)
-    {
-        window.$_currentlyPlaying.pause();
-    } 
-    window.$_currentlyPlaying = evt.target;
-}, true);
-  </script>
-      
    </body>
 </html>
