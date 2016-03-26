@@ -6,10 +6,13 @@
       <link rel="stylesheet" type="text/css" href="screen.css">
       <link href='https://fonts.googleapis.com/css?family=Racing+Sans+One' rel='stylesheet' type='text/css'>
       <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+
       <title>Home</title>
    </head>
    <body>
-      <div class="nav">
+
+      <nav>
          <ul>
             <li><a href="#Home">home</a>
             </li>
@@ -22,10 +25,12 @@
             <li><a href="#video">video</a>
             </li>
          </ul>
-      </div>
-      <div class="sec" id="section1">
+      </nav>
+
+
+      <div id="section1">
          <a id="Home"></a>
-         <img src="images/logo.svg" class="logo" alt="logo">
+         <img class="logo" src="images/logo.svg" id="home_logo" alt="logo" onerror="this.src='images/logo.png'">
          <div class="sentence-container">
             <div class="sec1content" id="sentence-1">
                <p>New to Chicago?</p>
@@ -41,23 +46,27 @@
             </div>
          </div>
       </div>
-      <div class="border">
-         <div class="where">
-            <div class="question_mark">
-               <img id="question" src="images/question.svg" alt="questionlogo">
-            </div>
-            <div id="text">
+
+      <div class="border" id="section2">
+         <div class="section2_wrapper">
+            
+               <img class="logo" id="question" src="images/question.svg" alt="questionlogo" onerror="this.src='images/question.png'">
+          
+            <div class="text" id="section2_content">
                <h2>Where to go </h2>
                As a new student to IIT, you may struggle to find fun places in the city to explore. Do you find yourself staying at home every weekends because you don't know where to go?
                <a id="locations"></a>
             </div>
          </div>
       </div>
-      <div class="border">
-         <div class="sec" id="city">
-            <div class="location_mark"> <img id="location" src="images/location.svg" alt="locationlogo">
-            </div>
-            <div class="city_wrapper">
+
+
+      <div class="border" id="section3">
+         <div class="section3_wrapper">
+           
+            <img class="logo" id="location" src="images/location.svg" alt="locationlogo" onerror="this.src='images/location.png'">
+           
+            <div id="section3_content">
                <div class="subsec" id="downtown">
                   <h2 class="tittle">
                      Downtown 
@@ -112,17 +121,23 @@
          </div>
       </div>
       <a id="gallery"></a>
-      <div class="border">
-         <div  id="picture">
+
+
+      <div class="border" id="section4">
+         <div  class="section4_wrapper">
+            
             <div id="favorate_flex">
-               <div class="favorate_wrapper" >
-                  <img id="favorate" src="images/favorate.svg" alt="favorate_logo">          
-               </div>
-               <div class="follow_wrapper" id="favorate_flex_item">
+
+              
+                  <img class="logo" id="favorate" src="images/favorate.svg" alt="favorate_logo" onerror="this.src='images/favorate.png'">          
+              
+
+               <div class="text" id="section4_content">
                   <h2>Your Ultimate Guide</h2>
                   Come with us, we find fun things to do and cool places to go in the city every week.
                </div>
             </div>
+
             <div class="photo">
                <img src="images/IMG_3092.JPG" alt="group">
                <img src="images/IMG_3090.jpg" alt="iceskating">
@@ -133,8 +148,10 @@
             </div>
          </div>
       </div>
-      <div class="border">
-         <div class="sec" id="section3">
+
+
+      <div class="border" id="section5">
+         <div class="section5_wrapper">
             <a id="quotes"></a>
             <div class="memeber_container">
                <figure>
@@ -156,23 +173,29 @@
             </div>
          </div>
       </div>
-      <div class="border">
-         <div id="sec_quoute">
-            <div class="quote_wrapper" >
-               <img id="quote" src="images/quote.svg" alt="quote">
-            </div>
-            <div class="about-text" >
+
+
+      <div class="border" id="section6">
+         <div class="section6_wrapper">
+
+          
+               <img class="logo" id="quote" src="images/quote.svg" alt="quote" onerror="this.src='images/quote.png'">
+          
+
+            <div class="text" id="section6_content">
                Chicago is a bustling city full of innovation, arts, culture, diversity and entertainment. Every day, you can find something new here. Whether it’s the Van Gof art exhibit at the Art Institute, the new free zipline, or the up and coming asian fusion restaurant in the loop, it’s always worth wandering out and discovering what the Second City has to offer. Join us for the next couple episodes 
             </div>
             <a id="video"></a>
          </div>
       </div>
-      <div id="section4">
+
+
+      <div id="section7">
          <div class="video_flex">
-            <div class="video_logo_wrapper">
-               <img id="video_logo" src="images/video.svg" alt="videologo">
-            </div>
-            <div class="video_description">
+           
+               <img class="logo" id="video_logo" src="images/video.svg" alt="videologo" onerror="this.src='images/video.png'">
+          
+            <div class="text">
                <h2>Introduction</h2>
                Downtown area:loop and Magnifcent Mile.
             </div>
